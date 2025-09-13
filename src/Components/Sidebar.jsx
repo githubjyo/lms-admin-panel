@@ -8,7 +8,7 @@ const Sidebar = () => {
     { path: "/dashboard", label: "Dashboard" },
     { path: "/students", label: "Students" },
     { path: "/courses", label: "Courses" },
-    { path: "/settings", label: "Settings" },
+    // { path: "/settings", label: "Settings" },
     { path: "/login", label: "Logout" },
   ];
 

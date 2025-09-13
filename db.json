@@ -15,8 +15,18 @@
       "studentName": "Ashwini",
       "studentEmail": "ashwini@gmail.com"
     }
+    
   ],
   "courses": [
-    {}
+    {
+      "id": "7ee1",
+      "courseName": "react",
+      "instructorName": "abc"
+    },
+    {
+      "id": "cd2a",
+      "courseName": "Angular",
+      "instructorName": "Tejas"
+    }
   ]
 }
