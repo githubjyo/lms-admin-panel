@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -16,7 +17,21 @@ const Dashboard = () => {
     localStorage.removeItem("password");
     navigate("/login");
   };
+
+  const [students, setStudents] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/students")
+      .then((res) => {
+        setStudents(res.data); // store all students
+      })
+      .catch((err) => {
+        console.error("Error fetching students:", err);
+      });
+  }, []);
   return (
+
     <>
        <div className="container mt-5">
       {/* Navbar-like section */}
@@ -37,7 +52,7 @@ const Dashboard = () => {
         <div className="col-md-4">
           <div className="card shadow border-0 text-center p-3 bg-primary text-white">
             <h5 className="card-title fw-bold">Total Students</h5>
-            <p className="display-6 fw-bold">120</p>
+            <p className="display-6 fw-bold">{students.length}</p>
           </div>
         </div>
         <div className="col-md-4">

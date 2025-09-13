@@ -17,7 +17,6 @@ function App() {
                 {/* Public Pages (No Sidebar / Navbar) */}
                 <Route path="/" element={<Navigate to="/login" />} />
                 <Route path="/login" element={<Login />} />
-
                 {/* Private Pages (With Sidebar & Navbar) */}
                 <Route
                     path="/dashboard"

@@ -5,7 +5,7 @@ const Sidebar = () => {
   const location = useLocation();
 
   const links = [
-    { path: "/", label: "Dashboard" },
+    { path: "/dashboard", label: "Dashboard" },
     { path: "/students", label: "Students" },
     { path: "/courses", label: "Courses" },
     { path: "/settings", label: "Settings" },
