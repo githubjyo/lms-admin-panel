@@ -1,16 +1,5 @@
-<<<<<<< HEAD
-
-import './App.css'
-
-function App() {
-<>
-    </>
-  
-}
-
-export default App
-=======
 import React from 'react';
+import './App.css'
 import "./styles/Style.css";
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './Components/Sidebar';
@@ -28,7 +17,7 @@ function App() {
             <Routes>
                 {/* Public Pages (No Sidebar / Navbar) */}
                 <Route path="/" element={<Navigate to="/login" />} />
-<Route path="/login" element={<Login />} />
+                <Route path="/login" element={<Login />} />
 
                 {/* Private Pages (With Sidebar & Navbar) */}
                 <Route
@@ -92,5 +81,5 @@ function App() {
     );
 }
 
+
 export default App;
->>>>>>> e0de8e8 (done-student-crud)
