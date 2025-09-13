@@ -1,0 +1,38 @@
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  position: fixed;
+}
+
+.sidebar .nav-link {
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.sidebar .nav-link.active {
+  font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 240px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+/* Cards */
+.card {
+  border-radius: 12px;
+}
+
+/* Buttons */
+.btn-primary {
+  border-radius: 8px;
+}
+
+form input {
+  border-radius: 8px;
+}
