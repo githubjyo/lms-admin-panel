@@ -6,7 +6,7 @@ import Navbar from './Components/Navbar';
 import Students from './Pages/Student';
 import Courses from './Pages/Courses';
 import Settings from './Pages/Setting';
-import './styles/Style.css';
+import './Styles/Style.css';
 import Dashboard from './Pages/Dashboard';
 import Login from './Pages/Login';
 
